@@ -7,10 +7,10 @@
   tasks:
   - name: delete wireshark
     yum:
-      name: wireshark
+      name: wireshark 
       state: removed
 
-- name: update LB server and db servers
+- name: update LB server and db servers test
   hosts: lb, db
   remote_user: ubuntu
   become: yes
